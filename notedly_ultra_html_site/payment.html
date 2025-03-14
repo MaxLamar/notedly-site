@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment - Notedly Pro</title>
+</head>
+<body>
+    <h2>Secure Payment</h2>
+    <form action="/api/payment" method="POST">
+        <label>Card Number: <input type="text" name="card_number" required></label><br>
+        <label>Expiration Date: <input type="text" name="expiry" placeholder="MM/YY" required></label><br>
+        <label>CVV: <input type="text" name="cvv" required></label><br>
+        <label>Name on Card: <input type="text" name="name_on_card" required></label><br>
+        <label>Plan: 
+            <select name="plan">
+                <option value="basic">Basic - Free</option>
+                <option value="pro">Pro - $9.99/mo</option>
+                <option value="enterprise">Enterprise - Contact Us</option>
+            </select>
+        </label><br>
+        <button type="submit">Pay Now</button>
+    </form>
+</body>
+</html>
